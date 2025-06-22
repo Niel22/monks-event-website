@@ -1,0 +1,162 @@
+@import "tailwindcss";
+
+/* Cy Grotesk Grand */
+@font-face {
+  font-family: 'Cy Grotesk Grand';
+  font-weight: 900; /* Black */
+  src: url('/fonts/Cy_Grotesk_Grand_Black.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Cy Grotesk Grand';
+  font-weight: 700; /* Bold */
+  src: url('/fonts/Cy_Grotesk_Grand_Bold.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Cy Grotesk Grand';
+  font-weight: 600; /* Dark */
+  src: url('/fonts/Cy_Grotesk_Grand_Dark.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Cy Grotesk Grand';
+  font-weight: 500; /* Demi */
+  src: url('/fonts/Cy_Grotesk_Grand_Demi.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Cy Grotesk Grand';
+  font-weight: 800; /* Heavy */
+  src: url('/fonts/Cy_Grotesk_Grand_Heavy.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Cy Grotesk Grand';
+  font-weight: 300; /* Light */
+  src: url('/fonts/Cy_Grotesk_Grand_Light.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Cy Grotesk Grand';
+  font-weight: 400; /* Regular */
+  src: url('/fonts/Cy_Grotesk_Grand_Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Cy Grotesk Grand';
+  font-weight: 100; /* Thin */
+  src: url('/fonts/Cy_Grotesk_Grand_Thin.ttf') format('truetype');
+}
+
+/* Cy Grotesk Key */
+@font-face {
+  font-family: 'Cy Grotesk Key';
+  font-weight: 900; /* Black */
+  src: url('/fonts/Cy_Grotesk_Key_Black.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Cy Grotesk Key';
+  font-weight: 700; /* Bold */
+  src: url('/fonts/Cy_Grotesk_Key_Bold.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Cy Grotesk Key';
+  font-weight: 600; /* Dark */
+  src: url('/fonts/Cy_Grotesk_Key_Dark.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Cy Grotesk Key';
+  font-weight: 500; /* Demi */
+  src: url('/fonts/Cy_Grotesk_Key_Demi.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Cy Grotesk Key';
+  font-weight: 800; /* Heavy */
+  src: url('/fonts/Cy_Grotesk_Key_Heavy.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Cy Grotesk Key';
+  font-weight: 300; /* Light */
+  src: url('/fonts/Cy_Grotesk_Key_Light.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Cy Grotesk Key';
+  font-weight: 400; /* Regular */
+  src: url('/fonts/Cy_Grotesk_Key_Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Cy Grotesk Key';
+  font-weight: 100; /* Thin */
+  src: url('/fonts/Cy_Grotesk_Key_Thin.ttf') format('truetype');
+}
+
+/* Cy Grotesk Wide */
+@font-face {
+  font-family: 'Cy Grotesk Wide';
+  font-weight: 900; /* Black */
+  src: url('/fonts/Cy_Grotesk_Wide_Black.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Cy Grotesk Wide';
+  font-weight: 700; /* Bold */
+  src: url('/fonts/Cy_Grotesk_Wide_Bold.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Cy Grotesk Wide';
+  font-weight: 600; /* Dark */
+  src: url('/fonts/Cy_Grotesk_Wide_Dark.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Cy Grotesk Wide';
+  font-weight: 500; /* Demi */
+  src: url('/fonts/Cy_Grotesk_Wide_Demi.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Cy Grotesk Wide';
+  font-weight: 800; /* Heavy */
+  src: url('/fonts/Cy_Grotesk_Wide_Heavy.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Cy Grotesk Wide';
+  font-weight: 300; /* Light */
+  src: url('/fonts/Cy_Grotesk_Wide_Light.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Cy Grotesk Wide';
+  font-weight: 400; /* Regular */
+  src: url('/fonts/Grotesk_Wide_Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Cy Grotesk Wide';
+  font-weight: 100; /* Thin */
+  src: url('/fonts/Cy_Grotesk_Wide_Thin.ttf') format('truetype');
+}
+
+body {
+  font-family: 'Cy Grotesk Grand', sans-serif;
+  scroll-behavior: smooth;
+  @apply text-white;
+}
+
+.container {
+  max-width: 1170px;
+}
+
+button {
+  @apply cursor-pointer;
+}
