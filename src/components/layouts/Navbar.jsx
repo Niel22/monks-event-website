@@ -9,6 +9,10 @@ const Navbar = () => {
     const toggleRef = useRef(null);
 
     useEffect(() => {
+        setNavOpen(false);
+    }, []);
+
+    useEffect(() => {
         const handleClickOutside = (event) => {
             if ((modalRef.current && !modalRef.current.contains(event.target)) &&
             (toggleRef.current && !toggleRef.current.contains(event.target) )

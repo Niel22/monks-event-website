@@ -15,13 +15,13 @@ const Header = () => {
                 <h2 className='w-full text-2xl md:text-3xl lg:text-5xl font-bold'>Tech<span className='ml-2'>Innovation</span> Event<span className='ml-2'>2025</span></h2>
                 <p className='w-full md:w-3/4 text-[10px] md:text-[13px] md:my-8'>Tech Innovation Event 2024: Unveiling breakthrough technologies and networking opportunities for industry pioneers.</p>
                 <div className='flex gap-4 w-1/2 md:w-full flex-col md:flex-row mx-auto md:mx-0'>
-                  <button className='px-4 md:px-6 py-3 text-[10px] lg:text-[13px] bg-[#7A38FC] hover:bg-[#FB714C] text-white rounded-md'>Buy Tickets</button>
-                  <button className='px-4 md:px-6 py-3 text-[10px] lg:text-[13px] border border-[#7A38FC] hover:bg-[#FB714C] hover:border-transparent text-white rounded-md'>See Schedule</button>
+                  <button className='px-4 md:px-6 py-3 text-[10px] lg:text-[13px] bg-[#7A38FC] hover:bg-[#FB714C] text-white rounded-md transition-colors duration-300'>Buy Tickets</button>
+                  <button className='px-4 md:px-6 py-3 text-[10px] lg:text-[13px] border border-[#7A38FC] hover:bg-[#FB714C] hover:border-transparent text-white rounded-md transition-colors duration-300'>See Schedule</button>
                 </div>
-                <img src='/public/img/hero-1.png' className='absolute -bottom-[30%]' width="10%" />
+                <img src='/img/hero-1.png' className='absolute -bottom-[30%]' width="10%" />
               </div>
               <div className='w-full md:gap-8 px-8 md:px-6 lg:px-4 '>
-                <img src="/public/img/hero-pics-1.png"  alt="" />
+                <img src="/img/hero-pics-1.png"  alt="" />
               </div>
             </div>
         </div>
