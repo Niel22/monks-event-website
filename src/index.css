@@ -147,8 +147,12 @@
   src: url('/fonts/Cy_Grotesk_Wide_Thin.ttf') format('truetype');
 }
 
-body {
+h1, h2, h3, h4, h5, h6 {
   font-family: 'Cy Grotesk Grand', sans-serif;
+}
+
+body {
+  
   scroll-behavior: smooth;
   @apply text-white;
 }
