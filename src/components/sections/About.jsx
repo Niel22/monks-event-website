@@ -23,9 +23,9 @@ const About = () => {
     <div className='relative w-full pt-30 md:pt-40'>
         <img src="/img/event-under.png" alt="About Event" className='w-full absolute top-20 -z-1' />
 
-        <div className='container px-8 flex flex-col gap-18 md:px-6 lg:px-4 mx-auto'>
+        <div className='container px-4 flex flex-col gap-18 md:px-6 mx-auto'>
             <div className='text-black flex flex-col lg:flex-row lg:items-start gap-8 text-center lg:text-left md:justify-between'>
-                <h2 className='text-3xl lg:text-4xl font-medium flex-1'>About the event</h2>
+                <h2 className='text-2xl md:text-3xl lg:text-4xl font-medium flex-1'>About the event</h2>
                 <p className='flex-1'><span className='text-[#7A38FC]'>Tech Event 2024</span> showcases groundbreaking innovations, featuring keynote talks, interactive workshops, and networking sessions for tech enthusiasts and industry leaders.</p>
             </div>
 
