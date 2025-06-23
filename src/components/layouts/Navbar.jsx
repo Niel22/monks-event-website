@@ -4,9 +4,26 @@ import { Link } from 'react-router-dom';
 import { BiX } from "react-icons/bi";
 
 const Navbar = () => {
-    const [navOpen, setNavOpen] = useState(true);
+    const [navOpen, setNavOpen] = useState(false);
     const modalRef = useRef(null);
     const toggleRef = useRef(null);
+    const [isSticky, setIsSticky] = useState(false);
+
+    useEffect(() => {
+        const handleScroll = () => {
+            if (window.scrollY > 0) {
+                setIsSticky(true);
+            } else {
+                setIsSticky(false);
+            }
+        };
+
+        window.addEventListener('scroll', handleScroll);
+
+        return () => {
+            window.removeEventListener('scroll', handleScroll);
+        };
+    }, []);
 
     useEffect(() => {
         setNavOpen(false);
@@ -73,8 +90,8 @@ const Navbar = () => {
 
   return (
     <>
-        <nav className='overflow-hidden transition-all duration-300 z-10 bg-transparent'>
-            <div className='container mx-auto px-4 py-4 md:py-6 md:px-6 flex items-center justify-between'>
+        <nav className={`fixed top-0 inset-x-0 overflow-hidden transition-all duration-300 z-100 ${isSticky ? 'bg-black' :'bg-transparent'}`}>
+            <div className='w-full container mx-auto px-4 py-4 md:py-6 md:px-6 flex items-center justify-between h-16 md:h-20'>
                 <Link to="/" className='font-medium text-xl lg:text-2xl'>Monks Event</Link>
                 <ul className='hidden lg:flex items-center gap-6 lg:gap-10 text-sm'>
                     {navLinks.map((link) => (
@@ -96,19 +113,21 @@ const Navbar = () => {
                 </div>
                 
             </div>
+            {navOpen && (
+                <div ref={modalRef} className={`lg:hidden w-full px-4 transition-all duration-300`} >
+                    <ul className='flex flex-col justify-start bg-white rounded-md gap-2 text-sm p-5'>
+                        {navLinks.map((link) => (
+                            <li key={link.path}>
+                                <Link className='text-black text-[12px]' onClick={toggleNav} to={link.path}>{link.label}</Link>
+                            </li>
+                        ))}
+                        <button className='block md:hidden mt-4 text-[12px] rounded-xl border hover:border-[#7A38FC] p-3 bg-[#7A38FC] hover:bg-transparent hover:text-black transition-colors duratiom-300'>
+                            Get Started
+                        </button>
+                    </ul>
+                </div>
+            )}
         </nav>
-        <div ref={modalRef} className={`absolute left-0 ${navOpen ? 'opacity-100 mt-0' : 'opacity-0 -mt-5'} lg:hidden w-full px-4 transition-all duration-300 z-10`} >
-            <ul className='flex flex-col justify-start bg-white rounded-md gap-2 text-sm p-5'>
-                {navLinks.map((link) => (
-                    <li key={link.path}>
-                        <Link className='text-black text-[12px]' onClick={toggleNav} to={link.path}>{link.label}</Link>
-                    </li>
-                ))}
-                <button className='block md:hidden mt-4 text-[12px] rounded-xl border hover:border-[#7A38FC] p-3 bg-[#7A38FC] hover:bg-transparent hover:text-black transition-colors duratiom-300'>
-                    Get Started
-                </button>
-            </ul>
-        </div>
     </>
   )
 }
